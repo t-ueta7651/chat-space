@@ -43,7 +43,6 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
 
 ### Association
 - has_many :massages
@@ -61,17 +60,15 @@ Things you may want to cover:
 ### Association
 - belongs_to :user
 - belongs_to :group
-- has_many :users
-- has_many :groups
 
 
 
-## massageテーブル
+## messageテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|massage|text|null: false|
+|message|text|
 |image|string|
 
 ### Association
