@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .side-bar{
   box-sizing:border-box;
   color: $white;
@@ -7,14 +11,14 @@
     height: 100px;
     line-height: 100px;
     padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     &__name {
-      display: inline-block;
       font-size: 16px  #ffffff;
       font-weight: bold;
     }
     &__lists{
-      display: inline-block;
-      float: right;
       .list {
         display: inline-block;
       }
@@ -27,7 +31,8 @@
   
   .groups{
     background-color: $side_blue_light;
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
+    overflow: scroll;
     padding: 0 20px;
     .group{
       box-sizing: border-box;
